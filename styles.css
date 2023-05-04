@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container {
+  position: relative;
+  width: 33.33%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-container-ctf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-ctf {
+  width: 20%;
+  height: 20%;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.title {
+  color: #fff;
+  font-family: "Big Shoulders Text", cursive;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.navbar {
+  width: 100%;
+  height: 55px;
+  background-color: black;
+  top: 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: #ff6600;
+  font-family: "Big Shoulders Text", cursive;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.home-ebike {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+.home-ebike-static, .home-3d-static, .home-ctf-static {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+.home-3d {
+  color: #3bd4fe;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+.home-ctf {
+  color: #67df31;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-family: "Big Shoulders Text", cursive;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Big Shoulders Text", cursive;
+  font-weight: 900;
+  color: white;
+  font-size: 30px;
+}
+
+.shadow--bottom:before {
+  content: "";
+  bottom: -1px;
+  background: linear-gradient(0deg, #141414, transparent);
+}
+
+.video {
+  z-index: -1;
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -10px;
+}
+
+.shadow--bottom,
+.shadow--top {
+  position: relative;
+}
+
+.shadow--bottom:before,
+.shadow--top:after {
+  content: "";
+  height: 2vw;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.wrapper-dark {
+  background: #141414;
+  color: #fff;
+}
+
+.container-wide {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.features__item__icon {
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__item {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 15px;
+  margin: 15px 0;
+  text-align: center;
+  flex: 1;
+  min-width: 117px;
+  width: 48%;
+  vertical-align: top;
+}
+
+.heading {
+  color: #ff6600;
+  font-family: "Big Shoulders Text", cursive;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.heading-ebike {
+  color: #ff6600;
+  font-family: "Big Shoulders Text", cursive;
+  text-transform: uppercase;
+}
+
+.heading-3d {
+  color: #3bd4fe;
+  font-family: "Big Shoulders Text", cursive;
+  text-transform: uppercase;
+}
+
+.heading-ctf {
+  color: #67df31;
+  font-family: "Big Shoulders Text", cursive;
+  text-transform: uppercase;
+}
+
+.features__item p {
+  margin: 0;
+  color: #e9e9e9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  height: 45px;
+  width: 45px;
+}
+
+.image-type {
+  width: 100%;
+  height: 45vh;
+}
+
+.description-body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.description-body p {
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.box {
+  padding: 20px 20px;
+}
+
+.container-description {
+  max-width: 900px;
+  margin: auto;
+}
+
+.text {
+  font-family: "Big Shoulders Text", cursive;
+  text-transform: uppercase;
+}
+
+.variants__item {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.variants__item__text {
+  background: #e9e9e9;
+  border-radius: 7px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 1rem 0;
+  list-style-type: disc;
+  -webkit-padding-start: 40px;
+  padding-inline-start: 40px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  margin-bottom:5px;
+}
+
+.details-item {
+  height: 350px;
+  margin: 3px;
+  flex: 1 0 230px;
+  overflow: hidden;
+}
